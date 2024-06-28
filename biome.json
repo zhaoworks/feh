@@ -14,5 +14,11 @@
 			"enabled": true,
 			"quoteStyle": "single"
 		}
+	},
+	"formatter": {
+		"enabled": true,
+		"indentWidth": 2,
+		"indentStyle": "space",
+		"lineEnding": "lf"
 	}
 }
