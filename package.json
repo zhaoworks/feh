@@ -1,7 +1,9 @@
 {
 	"name": "feh",
+	"author": "Kauê Fraga Rodrigues",
 	"version": "1.0.0",
-	"module": "index.ts",
+	"license": "MIT",
+	"module": "src/index.ts",
 	"type": "module",
 	"devDependencies": {
 		"@biomejs/biome": "1.8.3",
