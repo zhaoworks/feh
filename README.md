@@ -1,15 +1,61 @@
 # feh
 
-To install dependencies:
+> _feh_ stands for **F**astify **E**rror **H**andler, it's a plugin to facilitate and standardize error management in your Fastify application.
 
-```bash
-bun install
+## Usage
+
+### Installation
+
+```sh
+npm install feh
 ```
 
-To run:
+<details>
+<summary>yarn</summary>
 
-```bash
-bun run index.ts
+> ```sh
+> yarn add feh
+> ```
+
+</details>
+
+<details>
+<summary>pnpm</summary>
+
+> ```sh
+> pnpm add feh
+> ```
+
+</details>
+
+<details>
+<summary>bun</summary>
+
+> ```sh
+> bun add feh
+> ```
+
+</details>
+
+### Example
+
+After adding [Fastify](https://fastify.dev/) and **feh** in your project, try this
+
+```ts
+import fastify from 'fastify';
+import feh from 'feh';
+
+const server = fastify();
+
+server.register(feh);
+
+server.get('/', (_, reply) => {
+  return reply.error(500, {
+    message: 'something went completely wrong >:(',
+  });
+});
+
+server
+  .listen({ port: 4000 })
+  .then(() => console.log('Listening on http://localhost:4000/'));
 ```
-
-This project was created using `bun init` in bun v1.1.12. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
