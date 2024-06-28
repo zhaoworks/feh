@@ -59,3 +59,15 @@ server
   .listen({ port: 4000 })
   .then(() => console.log('Listening on http://localhost:4000/'));
 ```
+
+You can also add a custom format to your errors by registering a new error formatter.
+
+```ts
+server.register(feh, {
+  format: (status, error) => ({ error: error.message, our_fault: status === 500 })
+});
+
+server.get('/', (_, reply) => {
+  return reply.error(500, { message: 'a cat must have bitten the wires' }); // -> { error: 'a cat must have bitten the wires', our_fault: true }
+});
+```
