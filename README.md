@@ -7,14 +7,14 @@
 ### Installation
 
 ```sh
-npm install feh
+npm install @zhaoworks/feh
 ```
 
 <details>
 <summary>yarn</summary>
 
 > ```sh
-> yarn add feh
+> yarn add @zhaoworks/feh
 > ```
 
 </details>
@@ -23,7 +23,7 @@ npm install feh
 <summary>pnpm</summary>
 
 > ```sh
-> pnpm add feh
+> pnpm add @zhaoworks/feh
 > ```
 
 </details>
@@ -32,7 +32,7 @@ npm install feh
 <summary>bun</summary>
 
 > ```sh
-> bun add feh
+> bun add @zhaoworks/feh
 > ```
 
 </details>
@@ -43,7 +43,7 @@ After adding [Fastify](https://fastify.dev/) and **feh** in your project, try th
 
 ```ts
 import fastify from 'fastify';
-import feh from 'feh';
+import feh from '@zhaoworks/feh';
 
 const server = fastify();
 
