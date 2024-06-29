@@ -1,17 +1,24 @@
 {
-	"name": "feh",
-	"author": "Kauê Fraga Rodrigues",
-	"version": "1.0.0",
-	"license": "MIT",
-	"module": "src/index.ts",
-	"type": "module",
-	"devDependencies": {
-		"@biomejs/biome": "1.8.3",
-		"@types/bun": "latest",
-		"fastify": "^4.28.0",
-		"typescript": "^5.0.0"
-	},
-	"dependencies": {
-		"fastify-plugin": "^4.5.1"
-	}
+  "name": "@zhaoworks/feh",
+  "description": "fastify response errors.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Kauê Fraga Rodrigues",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "files": ["dist"],
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@types/bun": "latest",
+    "fastify": "^4.28.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "fastify-plugin": "^4.5.1"
+  }
 }
