@@ -6,7 +6,7 @@ interface ErrorOptions {
 }
 
 interface PluginOptions {
-  format?: (status: number, error: ErrorOptions) => unknown
+  format?: (status: number, error: ErrorOptions) => unknown;
 }
 
 /*
@@ -19,7 +19,7 @@ declare module 'fastify' {
   }
 }
 
-const DEFAULT_ERROR_FORMATTER = (_: number, error: ErrorOptions) => ({ error })
+const DEFAULT_ERROR_FORMATTER = (_: number, error: ErrorOptions) => ({ error });
 
 async function plugin(fastify: FastifyInstance, plugin: PluginOptions) {
   /*
@@ -28,7 +28,9 @@ async function plugin(fastify: FastifyInstance, plugin: PluginOptions) {
    */
   fastify.decorateReply('error', function (this, status, options) {
     return this.status(status).send(
-      typeof plugin.format === 'undefined' ? DEFAULT_ERROR_FORMATTER(status, options) : plugin.format(status, options)
+      typeof plugin.format === 'undefined'
+        ? DEFAULT_ERROR_FORMATTER(status, options)
+        : plugin.format(status, options),
     );
   });
 }
