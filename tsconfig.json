@@ -5,14 +5,11 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleDetection": "force",
-    "jsx": "react-jsx",
     "allowJs": true,
 
     // Bundler mode
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
-    "noEmit": true,
 
     // Best practices
     "strict": true,
@@ -22,6 +19,11 @@
     // Some stricter flags
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noPropertyAccessFromIndexSignature": true
-  }
+    "noPropertyAccessFromIndexSignature": true,
+
+    "declaration": true,
+    "outDir": "./dist",
+    "esModuleInterop": true
+  },
+  "exclude": ["src/server.ts"]
 }
