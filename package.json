@@ -1,7 +1,7 @@
 {
   "name": "@zhaoworks/feh",
   "description": "fastify response errors.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "Kauê Fraga Rodrigues",
   "type": "module",
