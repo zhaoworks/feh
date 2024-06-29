@@ -12,6 +12,7 @@
     "prepublishOnly": "npm run build"
   },
   "files": ["dist"],
+  "keywords": ["fastify", "plugin", "error"],
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "@types/bun": "latest",
