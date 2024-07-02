@@ -1,6 +1,6 @@
 # feh
 
-> _feh_ stands for **F**astify **E**rror **H**andler, it's a plugin to facilitate and standardize error management in your Fastify application.
+> *feh* is a Fastify Error Responder, it's a plugin to facilitate and standardize error management in your Fastify application.
 
 ## Usage
 
