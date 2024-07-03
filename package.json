@@ -1,10 +1,9 @@
 {
   "name": "@zhaoworks/feh",
   "description": "fastify response errors.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "author": "Kauê Fraga Rodrigues",
-  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -12,6 +11,12 @@
     "prepublishOnly": "npm run build"
   },
   "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
   "keywords": ["fastify", "plugin", "error"],
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
