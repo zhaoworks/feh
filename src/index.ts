@@ -37,7 +37,7 @@ async function plugin(fastify: FastifyInstance, plugin: PluginOptions) {
 
 const feh = fp(plugin, {
   name: 'feh',
-  fastify: '4.x',
+  fastify: '5.x',
 });
 
 export default feh;
