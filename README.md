@@ -1,4 +1,4 @@
-# feh
+# feh [![feh npm version](https://img.shields.io/npm/v/%40zhaoworks%2Ffeh)](https://www.npmjs.com/package/@zhaoworks/feh) [![last commit](https://img.shields.io/github/last-commit/zhaoworks/feh)](https://github.com/zhaoworks/feh/commits/main/)
 
 > *feh* is a Fastify Error Responder, it's a plugin to facilitate and standardize error management in your Fastify application.
 
@@ -7,8 +7,17 @@
 ### Installation
 
 ```sh
-npm install @zhaoworks/feh
+bun add @zhaoworks/feh
 ```
+
+<details>
+<summary>npm</summary>
+
+> ```sh
+> npm install @zhaoworks/feh
+> ```
+
+</details>
 
 <details>
 <summary>yarn</summary>
@@ -24,15 +33,6 @@ npm install @zhaoworks/feh
 
 > ```sh
 > pnpm add @zhaoworks/feh
-> ```
-
-</details>
-
-<details>
-<summary>bun</summary>
-
-> ```sh
-> bun add @zhaoworks/feh
 > ```
 
 </details>
